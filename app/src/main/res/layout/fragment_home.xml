@@ -1083,7 +1083,7 @@
                                 </FrameLayout>
                                 <View
                                     android:layout_width="match_parent"
-                                    android:layout_height="2dp"
+                                    android:layout_height="1dp"
                                     android:layout_marginTop="25px"
                                     android:background="#a6a6a6" />
                             </LinearLayout>
@@ -1267,7 +1267,7 @@
                                                             android:layout_gravity="center"
                                                             android:layout_margin="8dp"
                                                             android:gravity="center"
-                                                            android:text="Áo quần"
+                                                            android:text="Trang phục"
                                                             android:textColor="#FF000000"
                                                             android:textSize="16sp" /> <!-- Adjust margin as needed -->
 
@@ -1373,7 +1373,7 @@
                                     </FrameLayout>
                                     <View
                                         android:layout_width="match_parent"
-                                        android:layout_height="2dp"
+                                        android:layout_height="1dp"
                                         android:layout_marginTop="25px"
                                         android:background="#a6a6a6" />
 
@@ -1654,7 +1654,7 @@
                                     </FrameLayout>
                                     <View
                                         android:layout_width="match_parent"
-                                        android:layout_height="2dp"
+                                        android:layout_height="1dp"
                                         android:layout_marginTop="25px"
                                         android:background="#a6a6a6" />
                                 </LinearLayout>
