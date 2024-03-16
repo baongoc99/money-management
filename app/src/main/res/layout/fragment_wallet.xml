@@ -1,0 +1,526 @@
+cd<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- Phần trên (tỉ lệ 2) -->
+    <FrameLayout
+        android:id="@+id/topContainer"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="#f06292"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2">
+
+        <!-- LinearLayout chia thành 2 hàng 1:1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Hàng trên (tỉ lệ 1) -->
+            <FrameLayout
+                android:id="@+id/topRow"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#f06292">
+
+                <!-- LinearLayout chia thành 2 cột 1:1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <!-- Cột 1 (tỉ lệ 1) -->
+                    <FrameLayout
+                        android:id="@+id/column1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#f06292">
+
+                        <!-- Nội dung cột 1 -->
+                        <!-- Đặt các thành phần giao diện của cột 1 ở đây -->
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_show" />
+
+
+                    </FrameLayout>
+
+                    <!-- Cột 3 (tỉ lệ 3) -->
+                    <FrameLayout
+                        android:id="@+id/column2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#f06292">
+
+                        <!-- Đặt các thành phần giao diện của cột 2 ở đây -->
+
+                    </FrameLayout>
+
+                    <!-- Cột 3 (tỉ lệ 1) -->
+                    <FrameLayout
+                        android:id="@+id/column3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#f06292">
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/piggy_bank" />
+                    </FrameLayout>
+
+                    <!-- Cột 4 (tỉ lệ 1) -->
+                    <FrameLayout
+                        android:id="@+id/column4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#f06292">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/menu" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/bottomRow"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="#f06292"
+                android:padding="15dp">
+
+                <!-- Nội dung hàng dưới -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- Cột 1 (tỉ lệ 1) -->
+                    <FrameLayout
+                        android:id="@+id/bottomColumn1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#f06292">
+
+                        <!-- Nội dung cột 1 -->
+                        <!-- LinearLayout chia thành 2 hàng 1:1 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="126dp"
+                            android:orientation="vertical">
+
+                            <!-- Hàng trên (tỉ lệ 1) -->
+
+                            <!-- Hàng dưới (tỉ lệ 1) -->
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="-7dp"
+                                android:layout_weight="1"
+                                android:text="Ví tiền"
+                                android:textColor="@android:color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_marginBottom="-7dp"
+                                android:layout_weight="1"
+                                android:text="Tài sản ròng"
+                                android:textColor="@android:color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_marginBottom="-7dp"
+                                android:layout_weight="1"
+                                android:text="$971,741"
+                                android:textColor="@android:color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Tài sản"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="Món nợ"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="16sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView5"
+                                        android:layout_width="0dp"
+                                        android:layout_height="32dp"
+                                        android:layout_weight="1"
+                                        android:text="$971,741"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"/>
+
+                                    <TextView
+                                        android:id="@+id/textView6"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="$0"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <!-- Phần giữa (tỉ lệ 7) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/middleContainerCardView"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        app:cardBackgroundColor="#fcdce7"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topContainer">
+
+        <!-- LinearLayout chia thành 2 hàng 2:5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+            <!-- Hàng trên (tỉ lệ 2) -->
+            <FrameLayout
+                android:id="@+id/middleTopRow"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <!-- LinearLayout chia thành 3 hàng 1:2:1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <!-- Hàng 1 (tỉ lệ 1) -->
+                    <FrameLayout
+                        android:id="@+id/row1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <!-- LinearLayout chia thành 3 cột 1:1:1 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <!-- Cột 1 (tỉ lệ 1) -->
+                            <FrameLayout
+                                android:id="@+id/column1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <!-- LinearLayout chia thành 3 cột 1:2:1 -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textViewDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="Tiền mặt"
+                                        android:textColor="#808080"
+                                        android:textSize="16sp" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/column3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <!-- LinearLayout chia thành 2 cột -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <!-- Cột con 2 -->
+                                    <FrameLayout
+                                        android:id="@+id/subColumn2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/textViewDate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Tài sản: "
+                                            android:textColor="#808080"
+                                            android:textSize="16sp" />
+
+
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#a6a6a6" />
+
+                    <!-- Hàng 3 (tỉ lệ 1) -->
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Hàng dưới (tỉ lệ 5) -->
+            <FrameLayout
+                android:id="@+id/middleBottomRow"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <!-- LinearLayout chia thành 2 hàng 1-3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <!-- Hàng 1 (tỉ lệ 1) -->
+                    <FrameLayout
+                        android:id="@+id/middleBottomRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <!-- LinearLayout chia thành 2 hàng 1-2 -->
+                        <LinearLayout
+                            android:id="@+id/yourLinearLayoutId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="vertical">
+
+
+                            <!-- Hàng 2 (tỉ lệ 2) -->
+                            <FrameLayout
+                                android:id="@+id/middleBottomRow1_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <!-- LinearLayout with horizontal orientation -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <!-- Column 1 (tỉ lệ 1) -->
+
+                                    <FrameLayout
+                                        android:id="@+id/column1"
+                                        android:layout_width="10dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <!-- Nội dung cột 1 -->
+                                        <!-- Đặt các thành phần giao diện của cột 1 ở đây -->
+
+                                        <ImageView
+                                            android:id="@+id/imageView11"
+                                            android:layout_width="80dp"
+                                            android:layout_height="50dp"
+                                            android:adjustViewBounds="true"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/credit_ic" />
+
+                                    </FrameLayout>
+
+                                    <!-- Column 2 (tỉ lệ 1) -->
+                                    <FrameLayout
+                                        android:id="@+id/column2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3">
+
+                                        <!-- LinearLayout with vertical orientation -->
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <!-- Row 1 (tỉ lệ 1) -->
+                                            <FrameLayout
+                                                android:id="@+id/row1_column2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1" />
+
+                                            <TextView
+                                                android:id="@+id/textViewDate"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:text="Tài khoản mặc định "
+                                                android:textColor="@android:color/black"
+                                                android:textSize="16sp" />
+
+                                        </LinearLayout>
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:id="@+id/column4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2">
+
+                                        <!-- LinearLayout chia thành 2 hàng -->
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <!-- Hàng 1 (tỉ lệ 1) -->
+                                            <FrameLayout
+                                                android:id="@+id/row1_column4"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1">
+
+                                                <!-- Nội dung hàng 1 cột 4 -->
+                                                <!-- Đặt các thành phần giao diện của hàng 1 ở đây -->
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="-$171"
+                                                    android:textColor="#FF0000"
+                                                    android:textSize="16sp"
+                                                    android:textStyle="bold" />
+
+                                            </FrameLayout>
+
+
+                                            <!-- Hàng 2 (tỉ lệ 1) -->
+                                            <FrameLayout
+                                                android:id="@+id/row2_column4"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1">
+
+                                                <!-- Nội dung hàng 2 cột 4 -->
+                                                <!-- Đặt các thành phần giao diện của hàng 2 ở đây -->
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="USD 1.00"
+                                                    android:textColor="#808080"
+                                                    android:textSize="16sp" />
+
+                                            </FrameLayout>
+
+
+                                        </LinearLayout>
+
+                                    </FrameLayout>
+
+
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
