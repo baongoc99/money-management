@@ -1,4 +1,4 @@
-cd<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -39,7 +39,7 @@ cd<?xml version="1.0" encoding="utf-8"?>
 
                     <!-- Cột 1 (tỉ lệ 1) -->
                     <FrameLayout
-                        android:id="@+id/column1"
+                        android:id="@+id/column10"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -60,7 +60,7 @@ cd<?xml version="1.0" encoding="utf-8"?>
 
                     <!-- Cột 3 (tỉ lệ 3) -->
                     <FrameLayout
-                        android:id="@+id/column2"
+                        android:id="@+id/column11"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
@@ -72,7 +72,7 @@ cd<?xml version="1.0" encoding="utf-8"?>
 
                     <!-- Cột 3 (tỉ lệ 1) -->
                     <FrameLayout
-                        android:id="@+id/column3"
+                        android:id="@+id/column12"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -88,7 +88,7 @@ cd<?xml version="1.0" encoding="utf-8"?>
 
                     <!-- Cột 4 (tỉ lệ 1) -->
                     <FrameLayout
-                        android:id="@+id/column4"
+                        android:id="@+id/column13"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -144,7 +144,7 @@ cd<?xml version="1.0" encoding="utf-8"?>
 
                             <!-- Hàng dưới (tỉ lệ 1) -->
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/textView14"
                                 android:layout_width="wrap_content"
                                 android:layout_height="15dp"
                                 android:layout_marginTop="-7dp"
@@ -288,7 +288,7 @@ cd<?xml version="1.0" encoding="utf-8"?>
 
                             <!-- Cột 1 (tỉ lệ 1) -->
                             <FrameLayout
-                                android:id="@+id/column1"
+                                android:id="@+id/column15"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1">
@@ -300,7 +300,7 @@ cd<?xml version="1.0" encoding="utf-8"?>
                                     android:orientation="horizontal">
 
                                     <TextView
-                                        android:id="@+id/textViewDate"
+                                        android:id="@+id/textViewDate1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:gravity="center"
@@ -331,7 +331,7 @@ cd<?xml version="1.0" encoding="utf-8"?>
                                         android:layout_weight="1">
 
                                         <TextView
-                                            android:id="@+id/textViewDate"
+                                            android:id="@+id/textViewDate2"
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:gravity="center"
